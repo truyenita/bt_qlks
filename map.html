@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script type=”text/javascript” src=”http://www.google.com/jsapi?key=abcdef“></script>
+<script type=”text/javascript”>
+google.load("maps", "2",{"other_params":"sensor=true"});
+function initialize() {
+var map = new google.maps.Map2(document.getElementById("map"));
+map.setCenter(new google.maps.LatLng(10.798571947792535, 106.66366338729858), 15);
+map.openInfoWindow(map.getCenter(), document.createTextNode("407 Nguyễn Trọng Tuyển, P2, Q.Tân Bình, TPHCM"));
+}
+google.setOnLoadCallback(initialize);
+</script>
+</head>
+
+<body>
+<div id="map" style="height:500px; width:500px"></div>
+</body>
+</html>
